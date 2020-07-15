@@ -1,6 +1,9 @@
 # openshift-compliance
 OpenShift Compliance documentation. See [http://openshift-compliance-guide.readthedocs.io](http://openshift-compliance-guide.readthedocs.io/en/latest/index.html).
 
+## Deprecation notice
+This repo is deprecated. Please use [ATO Pathways](https://github.com/RedHatGov/ato-pathways).
+
 ## ReStructuredText Primer
 
 For help with ReStructuredText syntax, check out the [Quickstart Guide](http://docutils.sourceforge.net/docs/user/rst/quickstart.html).

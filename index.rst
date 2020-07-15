@@ -4,6 +4,11 @@
 The OpenShift Compliance Guide
 ##############################
 
+******************
+Deprecation Notice
+******************
+This project is deprecated. Please see `ATO Pathways <http://atopathways.redhatgov.io/>`_.
+
 *****
 About
 *****

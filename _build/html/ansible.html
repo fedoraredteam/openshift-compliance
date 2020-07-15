@@ -3,8 +3,7 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
@@ -14,50 +13,48 @@
   
 
   
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+
+  
+  
+  
   
 
   
-
-  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="OpenShift Compliance Guide 1.0 beta documentation" href="index.html"/>
-        <link rel="next" title="Frequently Asked Questions" href="faq.html"/>
-        <link rel="prev" title="Customer Responsibility Matrix" href="crm.html"/> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Frequently Asked Questions" href="faq.html" />
+    <link rel="prev" title="Customer Responsibility Matrix" href="crm.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
-            <a href="toc.html" class="icon icon-home"> OpenShift Compliance Guide
+            <a href="toc.html" class="icon icon-home" alt="Documentation Home"> OpenShift Compliance Guide
           
 
           
@@ -84,11 +81,15 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">  Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sec_conops.html">  Security CONOPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="controls.html">  Security Controls</a></li>
@@ -113,40 +114,61 @@
             
           
         </div>
+        
       </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="toc.html">OpenShift Compliance Guide</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="toc.html">OpenShift Compliance Guide</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="toc.html">Docs</a> &raquo;</li>
-      
-    <li>Ansible</li>
+    
+      <li><a href="toc.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Ansible</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/ansible.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/ansible.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -173,35 +195,35 @@ to run OCP 3.3 in the private VPC. Many of the functions implemented by
 <a class="reference external" href="https://github.com/jason-callaway/openshift-disconnected">openshift-disconnected</a> are pluggable and can be added to your Ansible
 project with <a class="reference external" href="https://galaxy.ansible.com/">Ansible Galaxy</a> from the <a class="reference external" href="https://galaxy.ansible.com/rhtps">RHTPS</a> organization.</p>
 <p>Some of the most reusable roles are:</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="23%" />
-<col width="77%" />
+<col style="width: 23%" />
+<col style="width: 77%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Role</th>
-<th class="head">Description</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Role</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="https://galaxy.ansible.com/rhtps/800-53/">800-53</a></td>
-<td>Implements RHEL FISMA compliance and scans the resultant
-configuration with OpenSCAP.</td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://galaxy.ansible.com/rhtps/800-53/">800-53</a></p></td>
+<td><p>Implements RHEL FISMA compliance and scans the resultant
+configuration with OpenSCAP.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://galaxy.ansible.com/rhtps/bind/">bind</a></td>
-<td>Deploys DNS services into the private VPC</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://galaxy.ansible.com/rhtps/bind/">bind</a></p></td>
+<td><p>Deploys DNS services into the private VPC</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://galaxy.ansible.com/rhtps/private-aws/">private-aws</a></td>
-<td>Sets up the public and private VPCs and deploys the EC2
-instances.</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://galaxy.ansible.com/rhtps/private-aws/">private-aws</a></p></td>
+<td><p>Sets up the public and private VPCs and deploys the EC2
+instances.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://galaxy.ansible.com/rhtps/registry/">registry</a></td>
-<td>Sets up a private docker registry and populates it with
-all of the images required by OpenShift.</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://galaxy.ansible.com/rhtps/registry/">registry</a></p></td>
+<td><p>Sets up a private docker registry and populates it with
+all of the images required by OpenShift.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://galaxy.ansible.com/rhtps/yum/">yum</a></td>
-<td>Sets up a yum server with all of the RPM content required
-for the OpenShift deployment.</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://galaxy.ansible.com/rhtps/yum/">yum</a></p></td>
+<td><p>Sets up a yum server with all of the RPM content required
+for the OpenShift deployment.</p></td>
 </tr>
 </tbody>
 </table>
@@ -222,15 +244,15 @@ As a work around, manual implementation instructions are below.</p>
 <p>The request header authentication passes the authentication request to another Apache process.  If that process successfully authenticates (and authorizes if desired) the user, then it passes the username back to the OpenShift master in an HTTP header.</p>
 <p>This Apache process may be run on the OpenShift master or separate host.  This example assumes the Apache process is on a separate host.</p>
 <ol class="arabic simple">
-<li>OpenShift Master – master.example.com</li>
-<li>Apache proxy for authentication – proxy.example.com</li>
+<li><p>OpenShift Master – master.example.com</p></li>
+<li><p>Apache proxy for authentication – proxy.example.com</p></li>
 </ol>
 </div>
 <div class="section" id="openshift-master-creating-certificates">
 <h4>OpenShift Master – Creating Certificates<a class="headerlink" href="#openshift-master-creating-certificates" title="Permalink to this headline">¶</a></h4>
 <p>OpenShift manages its own certificates to encrypt inter-nodal communication.  This is beneficial in another way.  We don’t want someone to spoof our proxy and authenticate by passing in a remote header from some random host.  Therefore, we will create a certificate for the Apache proxy using the CA on the OpenShift master.</p>
 <p>SSH to the OpenShift master and elevate your privileges to root.</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span># oadm ca create-signer-cert \
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># oadm ca create-signer-cert \
 --cert=&#39;/etc/origin/master/proxyca.crt&#39; \
 --key=&#39;/etc/origin/master/proxyca.key&#39; \
 --name=&#39;openshift-proxy-signer@1432232228&#39; \
@@ -257,11 +279,11 @@ proxy/system\:proxy.key &gt; \
 <div class="section" id="apache-proxy">
 <h4>Apache Proxy<a class="headerlink" href="#apache-proxy" title="Permalink to this headline">¶</a></h4>
 <p>SSH into the Apache Proxy and install some basic packages as root.</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span># yum install -y httpd mod_ssl mod_session apr-util-openssl
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># yum install -y httpd mod_ssl mod_session apr-util-openssl
 </pre></div>
 </div>
 <p>Also, as root, create a new Apache configuration file with the following content in /etc/httpd/conf.d/</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span># vi /etc/httpd/conf.d/ose-proxy.conf
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># vi /etc/httpd/conf.d/ose-proxy.conf
 
 LoadModule session_module modules/mod_session.so
 LoadModule request_module modules/mod_request.so
@@ -342,29 +364,29 @@ RequestHeader unset X-Remote-User
 <div class="section" id="openshift-master-auth-configuration">
 <h4>OpenShift Master - Auth Configuration<a class="headerlink" href="#openshift-master-auth-configuration" title="Permalink to this headline">¶</a></h4>
 <p>Now that we have Apache configured, we need to configure the authentication provider for the OpenShift Master.  SSH into the OpenShift Master and elevate your privileges to root.  Then edit the Master’s configuration file.</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span># vi /etc/origin/master/master-config.yaml
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># vi /etc/origin/master/master-config.yaml
 </pre></div>
 </div>
 <p>Now, in the oathConfig section, enter the following</p>
-<div class="highlight-yaml"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">oauthConfig</span><span class="p p-Indicator">:</span>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">oauthConfig</span><span class="p">:</span>
   <span class="l l-Scalar l-Scalar-Plain">...</span>
   <span class="l l-Scalar l-Scalar-Plain">identityProviders</span><span class="p p-Indicator">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">requestheader</span>
-    <span class="l l-Scalar l-Scalar-Plain">challenge</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="l l-Scalar l-Scalar-Plain">login</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="l l-Scalar l-Scalar-Plain">provider</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">apiVersion</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">v1</span>
-      <span class="l l-Scalar l-Scalar-Plain">kind</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">RequestHeaderIdentityProvider</span>
-      <span class="l l-Scalar l-Scalar-Plain">challengeURL</span><span class="p p-Indicator">:</span> <span class="s">&quot;https://proxy.example.com/challenging-proxy/oauth/authorize?${query}&quot;</span>
-      <span class="l l-Scalar l-Scalar-Plain">loginURL</span><span class="p p-Indicator">:</span> <span class="s">&quot;https://proxy.example.com/login-proxy/oauth/authorize?${query}&quot;</span>
-      <span class="l l-Scalar l-Scalar-Plain">clientCA</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">/etc/origin/master/proxyca.crt</span>
-      <span class="l l-Scalar l-Scalar-Plain">headers</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">requestheader</span>
+    <span class="nt">challenge</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">login</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">provider</span><span class="p">:</span>
+      <span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">v1</span>
+      <span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">RequestHeaderIdentityProvider</span>
+      <span class="nt">challengeURL</span><span class="p">:</span> <span class="s">&quot;https://proxy.example.com/challenging-proxy/oauth/authorize?${query}&quot;</span>
+      <span class="nt">loginURL</span><span class="p">:</span> <span class="s">&quot;https://proxy.example.com/login-proxy/oauth/authorize?${query}&quot;</span>
+      <span class="nt">clientCA</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/etc/origin/master/proxyca.crt</span>
+      <span class="nt">headers</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">X-Remote-User</span>
 </pre></div>
 </div>
 <p>YAML is delimited by spaces.  Please ensure you have the correct spacing.</p>
 <p>Once you have saved the file, go ahead and restart your master.</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span># systemctl restart atomic-openshift-master.service
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># systemctl restart atomic-openshift-master.service
 </pre></div>
 </div>
 <p>Now navigate to your OpenShift master in a web browser.  If you have a valid client certificate, you should just be authenticated.</p>
@@ -375,15 +397,16 @@ RequestHeader unset X-Remote-User
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="faq.html" class="btn btn-neutral float-right" title="Frequently Asked Questions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="faq.html" class="btn btn-neutral float-right" title="Frequently Asked Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="crm.html" class="btn btn-neutral" title="Customer Responsibility Matrix" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="crm.html" class="btn btn-neutral float-left" title="Customer Responsibility Matrix" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -392,11 +415,19 @@ RequestHeader unset X-Remote-User
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Red Hat.
+        
+        &copy; Copyright 2016, Red Hat
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -408,36 +439,15 @@ RequestHeader unset X-Remote-User
   </div>
   
 
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'1.0 beta',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
    
 
 </body>
